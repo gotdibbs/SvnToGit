@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SVN >> Git</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nprogress.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1 class="app-header-text">SVN >> Git</h1>
+    </header>
+
+    <table class="app-container">
+      <colgroup>
+        <col width="58%" />
+        <col width="4%" />
+        <col width="38%" />
+      </colgroup>
+      <tr>
+        <td class="app-panel">
+          <fieldset class="form-group">
+            <label for="svnUrl" class="form-label">SVN URL:</label>
+            <input type="url" id="svnUrl" placeholder="e.x. http://server/svn/Projects/AwesomeProject" class="form-control" />
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="gitUrl" class="form-label">Git URL:</label>
+            <input type="url" id="gitUrl" placeholder="e.x. http://server/git/Projects/awesomeproject.git" class="form-control" />
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" id="username" value="" placeholder="e.x. 'wdibbern'" class="form-control" />
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" id="password" class="form-control" />
+          </fieldset>
+
+          <hr>
+
+          <button id="migrate" disabled="disabled" class="btn btn-primary">Migrate</button>
+        </td>
+        <td><!-- spacer --></td>
+        <td class="app-panel">
+          <pre id="log" class="app-log"></pre>
+        </td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="js/nprogress.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

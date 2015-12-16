@@ -1,0 +1,39 @@
+html,
+body {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.app-header {
+    border-bottom: 1px solid #29d;
+    margin-bottom: 1rem;
+}
+
+.app-header-text {
+    padding-bottom: 0.25rem;
+}
+
+.app-container {
+    height: 100%;
+    width: 100%;
+}
+
+.app-panel {
+    vertical-align: top;
+}
+
+.form-label {
+    text-transform: uppercase;
+}
+
+.app-log {
+    background: #f8f8f8;
+    height: 100%;
+    overflow: auto;
+    padding: 0.2rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+}
